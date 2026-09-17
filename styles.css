@@ -9,3 +9,20 @@
 .team-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.team-card.featured{grid-column:auto}.team-card.featured .founder-photo{aspect-ratio:4/5}
 @media(max-width:900px){.team-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.team-card.featured{grid-column:auto}.team-card.featured .founder-photo{aspect-ratio:4/5}}
 @media(max-width:600px){.team-grid{grid-template-columns:1fr}}
+
+/* Alignment and footer corrections */
+.hero-letter{top:15%}
+.letter-i{left:7%;top:15%}
+.letter-d{left:50%;top:15%;transform:translateX(-50%)}
+.letter-p{right:1%;top:15%}
+.footer-mark{display:flex;align-items:center;gap:3px;font-family:var(--display);font-size:1.55rem;font-weight:700;line-height:1}
+.footer-mark span:nth-child(1){color:var(--red)}
+.footer-mark span:nth-child(2){color:var(--orange)}
+.footer-mark span:nth-child(3){color:var(--blue)}
+
+@media(max-width:600px){
+  .hero-visual{width:min(92vw,420px)}
+  .hero-letter{font-size:clamp(6rem,29vw,8.5rem)}
+  .letter-i{left:8%}
+  .letter-p{right:2%}
+}
